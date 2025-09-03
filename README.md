@@ -1,7 +1,8 @@
-⚖️ ClauseWise — Legal Document Analyzer
+# ⚖️ **ClauseWise — Legal Document Analyzer**
 
-AI-powered legal document analyzer built with FastAPI (backend) and Streamlit (frontend).
-It simplifies and classifies legal documents, extracts entities, and provides quick clause search.
+AI-powered legal document analyzer built with **FastAPI** (backend) and **Streamlit** (frontend).  
+It simplifies and classifies legal documents, extracts entities, and provides quick clause search.  
+
 
 🚀 Features
 
@@ -9,7 +10,7 @@ Clause Simplification → Rewrites complex legal text into plain English.
 
 Named Entity Recognition (NER) → Extracts parties, dates, amounts, legal terms.
 
-Clause Extraction & Breakdown → Segments legal contracts into smaller clauses.
+Clause Extraction & Breakdown → Sements legal contracts into smaller clauses.
 
 Document Classification → Predicts type: NDA, Lease, Employment, Service Agreement.
 
