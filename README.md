@@ -27,11 +27,11 @@ ClauseWise converts complex legal text into user-friendly insights—simplifying
 ## Quick Start
 
 ```bash
-# 1. Clone the repository
+## 1. Clone the repository
 git clone https://github.com/YOUR-USERNAME/ClauseWise.git
 cd ClauseWise
 
-# 2. Project structure
+## 2. Project structure
 # ClauseWise/
 # ├── backend/
 # │   ├── main.py
@@ -44,12 +44,12 @@ cd ClauseWise
 # ├── README.md
 # └── ... (other project files)
 
-# 3. Install and run Backend (FastAPI)
+## 3. Install and run Backend (FastAPI)
 cd backend
 pip install -r requirements.txt
 uvicorn main:app --reload
 
-# 4. Open a new terminal, install and run Frontend (Streamlit)
+## 4. Open a new terminal, install and run Frontend (Streamlit)
 cd frontend
 pip install -r requirements.txt
 streamlit run app.py
