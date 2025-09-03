@@ -1,57 +1,55 @@
-# ⚖️ **ClauseWise — Legal Document Analyzer**
+# ⚖️ ClauseWise — Legal Document Analyzer
 
-AI-powered legal document analyzer built with **FastAPI** (backend) and **Streamlit** (frontend).  
-It simplifies and classifies legal documents, extracts entities, and provides quick clause search.  
+AI-powered legal document analyzer combining **FastAPI** (backend) and **Streamlit** (frontend).  
+ClauseWise converts complex legal text into user-friendly insights—simplifying clauses, extracting entities, classifying documents, and more.
 
+---
 
-🚀 Features
+## Features
 
-Clause Simplification → Rewrites complex legal text into plain English.
+- **Upload & Extract**: Supports PDF, DOCX, and TXT file formats.  
+- **Clause Simplification**: Translates dense legalese into plain English.  
+- **Document Classification**: Identifies types like NDA, Lease, Employment, Service Agreement.  
+- **Named Entity Recognition (NER)**: Captures parties, dates, organizations, amounts, and legal terms.  
+- **Keyword Search**: Quickly find matching clauses or terms.  
+- **Bulk Simplify**: Streamline multiple clauses simultaneously.  
 
-Named Entity Recognition (NER) → Extracts parties, dates, amounts, legal terms.
+---
 
-Clause Extraction & Breakdown → Sements legal contracts into smaller clauses.
+## Tech Stack
 
-Document Classification → Predicts type: NDA, Lease, Employment, Service Agreement.
+- **Backend**: FastAPI, Hugging Face Transformers, PyTorch  
+- **Frontend**: Streamlit  
+- **Libraries**: pypdf, python-docx, pandas, re  
 
-Multi-format Support → Upload PDF, DOCX, TXT files.
+---
 
-Search & Bulk Simplify → Keyword-based search and full document simplification.
+## Quick Start
 
-🛠️ Tech Stack
-
-Backend → FastAPI, Hugging Face Transformers, PyTorch
-
-Frontend → Streamlit
-
-Other Tools → Hugging Face Hub, PyPDF, python-docx
-
-📂 Project Structure
-ClauseWise/
-│── app.py             # Streamlit frontend
-│── main.py            # FastAPI backend
-│── test_ner.py        # Testing NER
-│── requirements.txt   # Dependencies
-│── README.md          # Documentation
-
-⚡ Setup & Installation
-1️⃣ Clone Repository
-git clone https://github.com/your-username/ClauseWise.git
+```bash
+# 1. Clone the repository
+git clone https://github.com/YOUR-USERNAME/ClauseWise.git
 cd ClauseWise
 
-2️⃣ Create Virtual Environment
-python -m venv venv
-source venv/bin/activate   # On Linux/Mac
-venv\Scripts\activate      # On Windows
+# 2. Project structure
+# ClauseWise/
+# ├── backend/
+# │   ├── main.py
+# │   ├── requirements.txt
+# │   └── ... (other backend files)
+# ├── frontend/
+# │   ├── app.py
+# │   ├── requirements.txt
+# │   └── ... (other frontend files)
+# ├── README.md
+# └── ... (other project files)
 
-3️⃣ Install Dependencies
+# 3. Install and run Backend (FastAPI)
+cd backend
 pip install -r requirements.txt
+uvicorn main:app --reload
 
-4️⃣ Run Backend (FastAPI)
-uvicorn main:app --reload --host 0.0.0.0 --port 8000
-
-
-API available at 👉 http://localhost:8000/docs
-
-5️⃣ Run Frontend (Streamlit)
+# 4. Open a new terminal, install and run Frontend (Streamlit)
+cd frontend
+pip install -r requirements.txt
 streamlit run app.py
